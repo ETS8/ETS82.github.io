@@ -1,0 +1,46 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Restaurante</title>
+</head>
+<body bgcolor="F9E760" text="45240A">
+    <h2>Menú de Restaurante</h2>
+
+    <div>
+        <h3>Platillos</h3>
+        <ul>
+            <li>
+                <span>Hamburguesa</span>
+                <button onclick="seleccionarPlatillo('Hamburguesa', 40)">Seleccionar</button>
+            </li>
+            <li>
+                <span>Pizza</span>
+                <button onclick="seleccionarPlatillo('Pizza', 80)">Seleccionar</button>
+            </li>
+            <li>
+                <span>Pasta Alfredo</span>
+                <button onclick="seleccionarPlatillo('Pasta Alfredo', 162)">Seleccionar</button>
+            </li>
+            <li>
+                <span>Sushi</span>
+                <button onclick="seleccionarPlatillo('Sushi', 260)">Seleccionar</button>
+            </li>
+            <li>
+                <span>Ensalada César</span>
+                <button onclick="seleccionarPlatillo('Ensalada César', 146)">Seleccionar</button>
+            </li>
+            <li>
+                <span>Orden de Tacos</span>
+                <button onclick="seleccionarPlatillo('Tacos', 130)">Seleccionar</button>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        function seleccionarPlatillo(platillo, precio) {
+            alert("Has seleccionado: " + platillo + ". Precio: $" + precio.toFixed(2));
+        }
+    </script>
+</body>
+</html>
